@@ -1,0 +1,101 @@
+% Curriculum de Ejemplo
+\documentclass[11pt, a4paper]{moderncv}
+%Estilo del paquete moderncv, otra opcion es classic
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+%Codificacion
+\usepackage[utf8]{inputenc}
+%\usepackage{hyperref}
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+\firstname{Nelson Efrain A.}
+\familyname{Cruz}
+\title{Currículum Vit\'ae}
+\address{Villa Lavalle - Rio Cachi 310}{CP 4400 Salta Capital}{Argentina}
+\mobile{0387-154899606}
+\social[github]{nerones}
+\social[linkedin]{nelsonefraincruz}
+%\photo[64pt]{picture_file}
+%---------------------
+% Contenido
+%---------------------
+\begin{document}
+
+\maketitle
+
+\section{Datos Personales}
+
+\cvlistitem{\textbf{Nombre:} Nelson Efrain Abraham}
+\cvlistitem{\textbf{Apellido:} Cruz}
+\cvlistitem{\textbf{DNI:} 31853992}
+\cvlistitem{\textbf{Fecha de Nacimiento:} 13 de Noviembre de 1985}
+\cvlistitem{\textbf{Dirección:} Villa Lavalle - Rio Cachi 310, CP 4400, Salta Capital}
+\cvlistitem{\textbf{Teléfonos:} 154899606}
+\cvlistitem{\textbf{Correo:} neac03@gmail.com}
+%\cvlistitem{\textbf{Web:}  www.ejemplo.net}
+
+\section{Formación académica}
+
+%En los cventry debe haber 6 llaves, aunque no tengamos mas que introducir
+%y esten vacias
+\cventry{1999--2004}{Técnico Electrónico} {Escuela de Educaci\'on T\'ecnica Nº 5138 Alberto Einstein}{Salta Capital}{}{Aparte de conocimientos en electrónica también fui formado de manera básica en instalaciones eléctricas, carpintería y herrería.}
+\cventry{2005--2013}{Computador Universitario}{Universidad Nacional de Salta}{Salta}{}{Titulo orientado a la programación en general con fuerte trasfondo de conocimientos matemáticos, se puede ver el trabajo final de la carrera en \href{https://github.com/nerones/JDBGM}{github.com/nerones/JDBGM}}
+\cventry{2011--Actualidad}{Cursando Licenciatura en Análisis Sistemas}{Universidad Nacional de Salta}{Salta}{}{Actualmente me resta únicamente finalizar con el trabajo final exigido en la carrera para poder recibir la licenciatura}
+%\section{Otros títulos y seminarios}
+\section{Otros formaciones}
+%\cventry{2010}{Curso de Extensión: Introducción a las redes de datos e internet} {Universidad Nacional de Salta}{Salta Capital}{}{}
+\cventry{Octubre 2011}{Curso de Extensión: Administración avanzada de GNU-Linux Debian} {Universidad Nacional de Salta}{Salta Capital}{}{}
+\cventry{Noviembre 2013}{Curso de PostgreSQL: Administración y Desarrollo} {Escuela de Administración Publica}{Salta Capital}{}{}
+%\cventry{2013 -- actualidad}{Especialización: Calidad Para el desarrollo de software} {INTI y Escuela de Administración Publica}{Salta Capital}{}{Serie de cursos introductorios y talleres orientados a la calidad de software, los temas desarrollados son Calidad de software, Normas ISO, CMMI, testing, patrones de diseño, arquitectura y metodologías ágiles: scrum y kanban}
+%\cventry{Agosto 2007}{Cuokokrso de Introducción a Servidores }{Universidad de Sevilla}{Sevilla}{}{}
+\cventry{Agosto 2013}{Curso de Introducción a la Calidad de Software}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Septiembre 2013}{Curso de Diseño de Software}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Octubre 2013}{Curso de Patrones de Diseño de Software}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Noviembre 2013}{Curso de Arquitectura de Software}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Diciembre 2013}{Curso de Normas ISO 9001:2008 Orientado a Empresas de Software}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Febrero 2014}{Curso de El testing como parte del proceso de Calidad de Software}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Marzo 2014}{Curso de Testing de aplicaciones Web}{EAP - INTI}{Salta Capital}{}{}
+\cventry{Julio 2014}{Curso de Testing de Metodologías Ágiles}{EAP - INTI}{Salta Capital}{}{}
+\section{Experiencia}
+\cventry{Octubre 2012 - actualidad}{Analista programador}{Secretaria General de la Gobernación}{Salta Capital}{Análisis y desarrollo de sistemas informáticos para el apoyo de la gestión de la Secretaria de Procedimientos de contrataciones y La Unidad Central de Contrataciones}{}
+\cventry{Enero 2015 - actualidad}{Analista programador}{Clasapp.com}{Salta Capital}{Análisis y desarrollo de una aplicación web, esto incluye el desarrollo de un cliente web y un API RESTFull para acceder al sistema. El API debía servir tanto para el cliente web como para una aplicación Android}{}
+%\section{Experiencia becada}
+%\section{Experiencia Freelance}
+%\section{Docencia}
+
+%para ver el funcionamiento de subsecciones
+%\subsection{Vocacional}
+
+%\cventry{2005 - 2008}{Encargado de mantenimiento}{Ciber Argos}{Salta}{Era un negocio familiar en el que era encargado del mantenimiento de la red interna, computadoras e instalación eléctrica. El local fue cerrado}{}
+%\cventry{Junio 2008 - Junio 2009}{Analista}{Empresa Y}{Sevilla}{}{}
+
+\section{Idiomas}
+
+%cvlanguage necesitan 3 llaves, cuestiones de formateo del curriculum
+\cvlanguage{Castellano}{Nativo}{}
+\cvlanguage{Inglés}{Nivel medio}{}
+\closesection{}
+%Salto de pagina
+%\pagebreak{}
+
+\section{Conocimientos técnicos}
+
+%Los comandos cvcomputer necesitan 4 llaves
+\cvcomputer{Programación}{PHP, Javascript, Java medio avanzado, Python medio}{}{}
+%\cvcomputer{Científico}{LaTex}{}{}
+\cvcomputer{Bases de Datos}{PostgreSQL, MySQL, SQLite}{}{}
+\cvcomputer{Desarrollo web}{HTML5, CSS3}{}{}
+\cvcomputer{Control de versiones}{Git avanzado, Subversion (SVN) basico}{}{}
+\cvcomputer{Ofimática}{Open Office basico, Microsoft Office basico, LaTex}{}{}
+\cvcomputer{Redes}{Armado y mantenimiento básico, configuración básica de routers}{}{}
+\cvcomputer{SSOO}{GNU/Linux (Debian, Ubuntu), Windows (XP, 7) instalación y mantenimiento en ambos}{}{}
+
+\section{Otros datos de interés}
+%Los cvitem necesitan dos llaves
+\cvitem{Software Libre}{Soy usuario de software libre por lo que tengo conocimiento de las herramientas disponibles, aunque no por ello dudo a la hora de tener que usar otras soluciones disponibles cuando ello sea necesario. }
+\cvitem{Personalidad}{Soy altamente adaptable a los diferentes entornos, siempre estoy predispuesto a mejorar y a aprender nuevas tecnologías, podría decirse que soy un autodidacta}
+%\section{Intereses}
+%\section{Más información}
+\end{document}

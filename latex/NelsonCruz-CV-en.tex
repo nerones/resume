@@ -1,0 +1,92 @@
+% Curriculum de Ejemplo
+\documentclass[11pt, a4paper]{moderncv}
+%Estilo del paquete moderncv, otra opcion es classic
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+%Codificacion
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+\firstname{Nelson Efrain A.}
+\familyname{Cruz}
+\title{Currículum Vit\'ae}
+\address{Villa Lavalle - Río Cachi 310}{A4414AZB, Salta Capital}{Argentina}
+\mobile{+54 9 387 154899606}
+\social[github]{nerones}
+\social[linkedin]{nelsonefraincruz}
+%\photo[64pt]{picture_file}
+%---------------------
+% Contenido
+%---------------------
+\begin{document}
+
+\maketitle
+
+\section{Personal data}
+
+\cvlistitem{\textbf{First name:} Nelson Efrain Abraham}
+\cvlistitem{\textbf{Last name:} Cruz}
+\cvlistitem{\textbf{Birth date:} November 13, 1985}
+\cvlistitem{\textbf{Address:} Villa Lavalle - Río Cachi 310, Postal Code A4414AZB, Salta Capital}
+\cvlistitem{\textbf{Telephone:} +54 9 387 154899606}
+\cvlistitem{\textbf{e-mail:} neac03@gmail.com}
+%\cvlistitem{\textbf{Web:}  www.ejemplo.net}
+
+\section{Education}
+
+%En los cventry debe haber 6 llaves, aunque no tengamos mas que introducir
+%y esten vacias
+\cventry{1999--2004}{Electronic technician}{Escuela de Educaci\'on T\'ecnica Nº 5138 Alberto Einstein}{Salta Capital}{}{School of technical education with electronic orientation and a heavy background in mathematics.}
+%
+\cventry{2005--2013}{Computador Universitario}{National university: Universidad Nacional de Salta}{Salta}{}{Title with orientation to general programming and a solid math foundation. The final project needed to graduate can be viewed in the following link \href{https://github.com/nerones/JDBGM}{github.com/nerones/JDBGM}}
+%
+\cventry{2011--at present}{Licenciatura en Análisis Sistemas}{National university: Universidad Nacional de Salta}{Salta}{}{At present I am in the final steps of the career, only final exams are pending to end the career. The degree in systems analysis is oriented to analysis and design of software and management of software projects}
+%\section{Otros títulos y seminarios}
+\section{Education - other}
+\cventry{2010}{Extension course: Introduction to data networks and internet} {Universidad Nacional de Salta}{Salta Capital}{}{}
+\cventry{November 2013}{Extension course: PostgreSQL: Administration and development} {Escuela de Administración Pública}{Salta Capital}{}{}
+\cventry{2013 -- at present}{Specialization: Quality in software development} {INTI y Escuela de Administración Pública}{Salta Capital}{}{A series of extensions courses and practices oriented to quality in software development.  The subjects treated are: quality in software, ISO standards, CMMI, testing, design patterns, architecture and agile methodologies: scrum and kanban.}
+%\cventry{Agosto 2007}{Curso de Introducción a Servidores }{Universidad de Sevilla}{Sevilla}{}{}
+
+%\section{Experience}
+
+%\section{Experiencia becada}
+%\section{Experiencia Freelance}
+%\section{Docencia}
+
+%para ver el funcionamiento de subsecciones
+%\subsection{Vocacional}
+
+%\cventry{2005 - 2008}{Encargado de mantenimiento}{Ciber Argos}{Salta}{Era un negocio familiar en el que era encargado del mantenimiento de la red interna, computadoras e instalación eléctrica. El local fue cerrado}{}
+%\cventry{Junio 2008 - Junio 2009}{Analista}{Empresa Y}{Sevilla}{}{}
+
+\section{Languages}
+
+%cvlanguage necesitan 3 llaves, cuestiones de formateo del curriculum
+\cvlanguage{Spanish}{Native}{}
+\cvlanguage{English}{Middle level}{}
+\closesection{}
+%Salto de pagina
+%\pagebreak{}
+
+\section{Technical skills}
+
+%Los comandos cvcomputer necesitan 4 llaves
+\cvcomputer{Programming}{PHP, JavaScript, Java medium, Python basic}{}{}
+%\cvcomputer{Científico}{LaTex}{}{}
+\cvcomputer{Databases}{PostgreSQL, MySQL, SQLite}{}{}
+\cvcomputer{Web development}{HTML, CSS}{}{}
+\cvcomputer{CVS}{Git, Subversion (SVN)}{}{}
+\cvcomputer{Office software}{Open Office, Microsoft Office basic, LaTex}{}{}
+\cvcomputer{SSOO}{GNU/Linux (Debian, Ubuntu), Windows (XP, 7) management and installation in both}{}{}
+
+\section{Other data of interest}
+%Los cvitem necesitan dos llaves
+\cvitem{Open source}{I am an avid open source user and I prefer to work with them, but if is needed to work with some proprietary software I have no trouble, I just think that the correct tool is the appropriate one.}
+\cvitem{Personality}{I am highly adaptable to new environments and an autodidact by nature, I'm always predisposed to learn new technologies.}
+%\section{Intereses}
+%\section{Más información}
+\end{document}
