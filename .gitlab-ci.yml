@@ -6,8 +6,8 @@ image: blang/latex
 
 build:
   script:
-    - latexmk -pdf latex/NelsonCruz-CV.tex
-    - latexmk -pdf latex/NelsonCruz-CV-en.tex
+    - pdflatex -synctex=1 -interaction=nonstopmod latex/NelsonCruz-CV.tex
+    - pdflatex -synctex=1 -interaction=nonstopmod latex/NelsonCruz-CV-en.tex
   artifacts:
     paths:
       - "*.pdf"
