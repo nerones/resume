@@ -8,6 +8,7 @@ build:
   script:
     - pdflatex -synctex=1 -interaction=nonstopmode latex/NelsonCruz-CV.tex
     - pdflatex -synctex=1 -interaction=nonstopmode latex/NelsonCruz-CV-en.tex
+    - echo "Compiled pdf"
   artifacts:
     paths:
       - "*.pdf"
