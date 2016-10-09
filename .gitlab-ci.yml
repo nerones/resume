@@ -6,10 +6,7 @@ image: walberla/latex
 
 build:
   script:
-    - mkdir es
-    - xelatex -synctex=1 -interaction=nonstopmode -output-directory=es latex/NelsonCruz-CV.tex
-    - mkdir en
-    - xelatex -synctex=1 -interaction=nonstopmode -output-directory=en latex/NelsonCruz-CV-en.tex
+    - xelatex -synctex=1 -interaction=nonstopmode latex/NelsonCruz-CV.tex
     - ls -la
     - echo "Compiled pdf"
   artifacts:
